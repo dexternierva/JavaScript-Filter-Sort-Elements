@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting and Filtering with javaScript</title>
+
+    <link rel="stylesheet" href="_/css/font-awesome.css">
+    <link rel="stylesheet" href="_/css/app.css">
+</head>
+
+<body>
+
+    <header class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Exclusion
+                </h1>
+                <h2 class="subtitle">
+                    Filtering and Sorting with JavaScript
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+
+        <div class="container">
+
+            <nav class="level">
+                <div class="level-left">
+                    <ul class="sort">
+                        <li class="sort-asc"><a class="button is-primary">Ascending</a></li>
+                        <li class="sort-desc"><a class="button is-primary">Descending</a></li>
+                    </ul>
+                </div>
+
+                <div class="level-right filters">
+                    <a class="level-item all"><strong>All</strong></a>
+                    <a class="button is-link category-b"></a>
+                    <a class="button is-success category-a"></a>
+                    <a class="button is-danger category-c"></a>
+                </div>
+            </nav>
+
+            <hr>
+
+            <section class="cards">
+
+                <article class="card cat-a" data-order="4">
+                    <header class="card-header ">
+                        <p class="card-header-title">
+                            4
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-b" data-order="1">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            1
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-c" data-order="3">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            3
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-b" data-order="2">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            2
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-c" data-order="9">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            9
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-b" data-order="6">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            6
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-c" data-order="7">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            7
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-a" data-order="8">
+                    <header class="card-header ">
+                        <p class="card-header-title">
+                            8
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card cat-a" data-order="5">
+                    <header class="card-header ">
+                        <p class="card-header-title">
+                            5
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a href="#">@bulmaio</a>.
+                            <a href="#">#css</a>
+                            <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- // .cards -->
+        </div>
+        <!-- // .container -->
+    </main>
+
+    <!-- Here Comes JavaScript -->
+    <script src="_/js/jquery-3.2.1.min.js"></script>
+    <script src="_/js/app.js"></script>
+</body>
+
+</html>
